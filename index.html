@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional resume website">
+  <title>Your Name - Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <img src="assets/avatar.png" alt="Your Avatar" class="avatar">
+      <h1>Your Name</h1>
+      <p class="tagline">Your professional tagline goes here</p>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Replace this text with a short bio describing who you are, your background,
+          and what makes you unique. Highlight your passions and what drives your work.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="alternate">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Python</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">UI/UX Design</span>
+          <span class="skill">Data Analysis</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Project One</h3>
+            <p>
+              Describe your project here. Mention the technologies used and the problem
+              it solves or the experience it provides. Link to the live demo or repository below.
+            </p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project Two</h3>
+            <p>
+              Describe your project here. Mention the technologies used and the problem
+              it solves or the experience it provides. Link to the live demo or repository below.
+            </p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Project Three</h3>
+            <p>
+              Describe your project here. Mention the technologies used and the problem
+              it solves or the experience it provides. Link to the live demo or repository below.
+            </p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="alternate">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Job Title at Company</h3>
+            <span class="date-range">Jan 2023 - Present</span>
+            <p>
+              Provide a concise overview of your role, responsibilities, and accomplishments at this position.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Previous Position</h3>
+            <span class="date-range">Jun 2021 - Dec 2022</span>
+            <p>
+              Provide a concise overview of your role, responsibilities, and accomplishments at this position.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>University Name</h3>
+            <span class="date-range">2017 - 2021</span>
+            <p>
+              Bachelor of Science in Computer Science. Include relevant coursework or honors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="alternate">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Get in touch with me! Fill out the form below or reach out through the links provided.
+        </p>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-links">
+          <a href="mailto:youremail@example.com">Email</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="current-year"></span> Your Name. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
