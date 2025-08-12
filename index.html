@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asiel Dimas — Resume</title>
+  <meta name="description" content="Resume website for Asiel Dimas, MIS graduate focused on IT systems, data, and cybersecurity.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="Asiel Dimas — Resume">
+  <meta property="og:description" content="MIS graduate focused on IT systems, data, and cybersecurity.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Asiel Dimas",
+    "jobTitle": "MIS Graduate, IT and Data",
+    "url": "",
+    "email": "mailto:asiel@example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wichita",
+      "addressRegion": "KS",
+      "addressCountry": "US"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Kansas State University"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/your-handle",
+      "https://github.com/your-handle"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <img src="favicon.svg" alt="" width="28" height="28" aria-hidden="true">
+        <span>Asiel Dimas</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" id="navToggle">
+          <span class="sr-only">Menu</span>
+          ☰
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◎</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero container" id="about">
+      <p class="eyebrow">MIS Graduate • Systems Thinking, Game Theory Mindset</p>
+      <h1>Hi, I am <span class="accent">Asiel Dimas</span></h1>
+      <p class="lead">
+        Entry level IT and data specialist with a focus on practical problem solving. Experience includes IT support, dashboards, and an employee scheduling app with an AI assistant. Interested in SOC workflows and secure OT modernization.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#contact">Contact</a>
+        <button class="btn secondary" onclick="window.print()">Download PDF</button>
+        <a class="btn ghost" href="Asiel-Dimas-Resume.pdf" download>Static PDF</a>
+      </div>
+      <ul class="quickfacts">
+        <li>Wichita, KS</li>
+        <li>Open to remote roles</li>
+        <li>US citizen</li>
+      </ul>
+    </section>
+
+    <section class="container cards" id="experience" aria-labelledby="exp-heading">
+      <h2 id="exp-heading">Experience</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>IT Intern, Spirit AeroSystems</h3>
+          <span class="meta">Jan 2025 to Aug 2025 • Wichita, KS</span>
+        </div>
+        <ul>
+          <li>Helped implement a timekeeping payroll system that reduced manual entry and errors.</li>
+          <li>Wrote security documentation for machines transitioning to defense programs.</li>
+          <li>Supported network and workstation troubleshooting, ticket triage, and user onboarding.</li>
+        </ul>
+        <div class="tags">
+          <span>Windows AD</span><span>PowerShell</span><span>Confluence</span><span>Visio</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Student Projects, Kansas State University</h3>
+          <span class="meta">2024 to 2025</span>
+        </div>
+        <ul>
+          <li>Built data dashboards for class projects with SQL and Python, presented insights that non technical stakeholders could act on.</li>
+          <li>Developed an employee scheduling app with an AI assistant, improved shift coverage and reduced back and forth.</li>
+        </ul>
+        <div class="tags">
+          <span>Python</span><span>Pandas</span><span>SQL</span><span>Flask</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="container cards" id="projects" aria-labelledby="proj-heading">
+      <h2 id="proj-heading">Projects</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>AI Assisted Scheduler</h3>
+          <span class="meta"><a href="#" aria-label="Project link">Repo</a></span>
+        </div>
+        <p>Web app that suggests optimal schedules based on availability and constraints, with a natural language assistant for quick edits.</p>
+        <ul>
+          <li>Constraint solver with Python, backed by SQLite.</li>
+          <li>REST API and simple React front end.</li>
+        </ul>
+        <div class="tags">
+          <span>Python</span><span>SQLite</span><span>React</span><span>OpenAI API</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>SOC Analyst Practice Lab</h3>
+          <span class="meta"><a href="#" aria-label="Project link">Write up</a></span>
+        </div>
+        <p>End to end practice lab for ingesting logs into Splunk, writing detections, and triaging simulated alerts.</p>
+        <ul>
+          <li>Parsed Windows event logs and firewall logs.</li>
+          <li>Wrote detections for failed logon storms and suspicious PowerShell.</li>
+        </ul>
+        <div class="tags">
+          <span>Splunk</span><span>Sysmon</span><span>Detection engineering</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>F1 Winners Elo</h3>
+          <span class="meta"><a href="#" aria-label="Project link">Notebook</a></span>
+        </div>
+        <p>Historical Elo for F1 winners, 1950 to 2025, built to showcase modeling skills and clean data work.</p>
+        <div class="tags">
+          <span>Pandas</span><span>scikit-learn</span><span>Matplotlib</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="container skills" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="grid-3">
+        <div>
+          <h3>Core</h3>
+          <ul class="pill-list">
+            <li>Python</li><li>SQL</li><li>Pandas</li><li>C#</li><li>PowerShell</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Platforms</h3>
+          <ul class="pill-list">
+            <li>Windows AD</li><li>Azure</li><li>Git</li><li>Splunk</li><li>Docker</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Strengths</h3>
+          <ul class="pill-list">
+            <li>Systems thinking</li><li>Game theory mindset</li><li>Clear writing</li><li>Stakeholder demos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="education" aria-labelledby="edu-heading">
+      <h2 id="edu-heading">Education</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>Kansas State University</h3>
+          <span class="meta">B.S. in Management Information Systems, 2025</span>
+        </div>
+        <p>Capstone focused on secure OT modernization and practical dashboards.</p>
+      </article>
+    </section>
+
+    <section class="container contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:asiel@example.com">
+          <span>Email</span>
+          <strong>asiel@example.com</strong>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <strong>/in/your-handle</strong>
+        </a>
+        <a class="contact-item" href="https://github.com/your-handle" target="_blank" rel="noopener">
+          <span>GitHub</span>
+          <strong>@your-handle</strong>
+        </a>
+        <button class="contact-item" id="copyEmail" aria-label="Copy email to clipboard">
+          <span>Copy</span>
+          <strong>Email to clipboard</strong>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Asiel Dimas. Built with clean HTML, CSS, and vanilla JS.</small>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
